@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+<body>
+  <div class="head text-center">
+    Tic-Tac-Toe!
+  </div>
+  <div class="container game">
+    <div id="optionbox" class="msgbox">
+      <div class="text-center option">Choose your side:
+      </div>
+      <div class="choice" onclick="Tic.gameStart('x')">
+        X
+      </div>
+      <div class="choice" onclick="Tic.gameStart('o')">
+        O
+      </div>
+    </div>
+    <div id="board1" class="board center">
+      <div class="tile text-center" id="tile1" onclick="Tic.put(1)">
+        &nbsp;
+      </div>
+      <div class="tile text-center" id="tile2" onclick="Tic.put(2)">
+        &nbsp;
+      </div>
+      <div class="tile text-center" id="tile3" onclick="Tic.put(3)">
+        &nbsp;
+      </div>
+      <div class="tile text-center" id="tile4" onclick="Tic.put(4)">
+        &nbsp;
+      </div>
+      <div class="tile text-center" id="tile5" onclick="Tic.put(5)">
+        &nbsp;
+      </div>
+      <div class="tile text-center" id="tile6" onclick="Tic.put(6)">
+        &nbsp;
+      </div>
+      <div class="tile text-center" id="tile7" onclick="Tic.put(7)">
+        &nbsp;
+      </div>
+      <div class="tile text-center" id="tile8" onclick="Tic.put(8)">
+        &nbsp;
+      </div>
+      <div class="tile text-center" id="tile9" onclick="Tic.put(9)">
+        &nbsp;
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" role="dialog" id="overmodal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Zannen!!</h4>
+        </div>
+        <div class="modal-body">
+          <p id="overmessage">SORRY BUT YOU WILL NEVER WIN !!ww</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" onclick="Tic.restart()">Restart</button>
+        </div>
+    </div>
+    </div>
+  </div>  
+</body>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

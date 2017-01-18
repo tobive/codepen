@@ -1,0 +1,60 @@
+body {
+  
+}
+
+.board {
+  height: 340px;
+  width: 360px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #e6ecff;
+  font-family: 'Indie Flower', cursive;
+}
+
+.choice {
+  padding-top: 20px;
+  padding-right: 80px;
+  padding-left: 80px;
+  float: left;
+  cursor: pointer;
+}
+
+.game {
+  background-color: #668cff;
+  border: 2px solid #668cff;
+  border-radius: 12px;
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.head {
+  margin-top: 50px;
+  font-size: 60px;
+  font-family: 'Lobster', cursive;
+}
+
+.msgbox {
+  color: white;
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+.tile {
+  heigth: 120px; 
+  width: 120px;
+  background-color: white;
+  float: left;
+  border: solid 2px #99b3ff;
+  padding-top: 0px;
+  font-size: 80px;
+  cursor: pointer;
+}
+
+#board1 {
+  display: none;
+}
+
+#optionbox {
+  display: block;
+}
